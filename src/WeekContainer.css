@@ -1,0 +1,22 @@
+/* Basic rectangular container */
+
+.WeekContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  width: 350px;
+  height: 175px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.weekText {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 200;
+    font-family: Kanit;
+    font-size: 28px;
+  }

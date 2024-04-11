@@ -1,0 +1,83 @@
+.App {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0; 
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Header {
+    background-color: #fff; 
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .Header h1 {
+    margin: 0;
+  }
+
+  .h2 {
+    margin: 8px;
+    font-weight: 200;
+    font-family: Kanit;
+    font-size: 28px;
+  }
+  
+  .h3 {
+    font-weight: 800;
+    font-family: Kanit;
+    font-size: 36px;
+    color: #007bff;
+  }
+
+  .h4 {
+    font-weight: 800;
+    font-family: Kanit;
+    font-size: 18px;
+    color: black;
+  }
+
+  .Header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .Header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .Header nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .MainContent {
+    flex-grow: 1;
+    padding: 20px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
+
+  .material-icons {
+    font-size: 36px; 
+    vertical-align: middle; 
+    margin: 0 20px; 
+    cursor: pointer; 
+    color: #999;
+  }
+
+  .Footer {
+    background-color: #fff; 
+    padding: 20px;
+    margin-top: auto; 
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+  

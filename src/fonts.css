@@ -1,0 +1,11 @@
+/* fonts.css */
+@font-face {
+    font-family: 'Kanit';
+    src: url('./fonts/Kanit/Kanit-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Kanit';
+    font-style: light;
+    src: url('./fonts/Kanit/Kanit-Light.ttf') format('truetype');
+  }

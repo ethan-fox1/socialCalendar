@@ -1,0 +1,23 @@
+.DailyCalendar {
+    margin-top: 20px;
+  }
+  
+  .calendarContainer {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .event {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .time {
+    flex: 0 0 100px; /* Fixed width for time column */
+  }
+  
+  .title {
+    flex-grow: 1; /* Expand to fill remaining space */
+    padding-left: 10px;
+  }
+  

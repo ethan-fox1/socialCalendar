@@ -1,0 +1,43 @@
+.Event {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .Class {
+    background-color: #ffcccc;
+  }
+  
+  .Meal {
+    background-color: #cce6ff;
+  }
+  
+  .Athletics {
+    background-color: #ccffcc;
+  }
+  
+  .Default {
+    background-color: #f0f0f0;
+  }
+  
+  .TitleLocation {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Title,
+  .Location {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .Title {
+    font-weight: 800;
+    font-size: 14px
+  }
+  

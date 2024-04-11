@@ -1,0 +1,9 @@
+.HourLine {
+    position: absolute;
+    width: 500px;
+    border-bottom: 1px solid #ccc;
+    opacity: 0.1;
+    height: 15px;
+    left: 20px;
+}
+  
