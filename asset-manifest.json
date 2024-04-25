@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/socialcalendar/static/css/main.563bbd13.css",
+    "main.js": "/socialcalendar/static/js/main.f9aaebc6.js",
+    "static/js/453.ed3810f9.chunk.js": "/socialcalendar/static/js/453.ed3810f9.chunk.js",
+    "static/media/Kanit-Regular.ttf": "/socialcalendar/static/media/Kanit-Regular.f3bae13d78ced30b6ea3.ttf",
+    "static/media/Kanit-Light.ttf": "/socialcalendar/static/media/Kanit-Light.7b6b95563f4c5697d973.ttf",
+    "index.html": "/socialcalendar/index.html",
+    "main.563bbd13.css.map": "/socialcalendar/static/css/main.563bbd13.css.map",
+    "main.f9aaebc6.js.map": "/socialcalendar/static/js/main.f9aaebc6.js.map",
+    "453.ed3810f9.chunk.js.map": "/socialcalendar/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.563bbd13.css",
+    "static/js/main.f9aaebc6.js"
+  ]
+}
