@@ -34,11 +34,18 @@ function CalendarContainer({events}) {
 
   // State to store daily events
   const [dailyEvents, setDailyEvents] = useState(initialEvents);
+  const [eventToDelete, setEventToDelete] = useState(null);
 
   // Add event to dailyEvents array
   const handleAddEvent = (newEvent) => {
     setDailyEvents([...dailyEvents, newEvent]);
   };
+
+  const handleDeleteEvent = (event) => {
+    setDailyEvents(dailyEvents.filter((e) => e !== event));
+    setEventToDelete(null);
+   
+  }
 
   // Function to generate CalendarEvent components based on dailyEvents data
   const renderEvents = () => {
@@ -54,6 +61,7 @@ function CalendarContainer({events}) {
           title={event.title}
           location={event.location}
           eventType={event.eventType}
+          onDelete={() => setEventToDelete(event)}
         />
       </div>
     ));
@@ -98,6 +106,17 @@ function CalendarContainer({events}) {
       <div>
         <AddEventForm onAddEvent={handleAddEvent} />
       </div>
+
+      {eventToDelete && (
+        <div className="DeleteEventModal">
+          <div className="DeleteEventModalContent">
+            <h3>Delete "{eventToDelete.title}"?</h3>
+            <button onClick={() => handleDeleteEvent(eventToDelete)}>Yes</button>
+            <button onClick={() => setEventToDelete(null)}>No</button>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 }

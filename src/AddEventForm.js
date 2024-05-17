@@ -27,11 +27,16 @@ function AddEventForm({ onAddEvent }) {
     setShowForm(false); // Hide the form after submitting
   };
 
+  const handleClose = () => {
+    setShowForm(false); // Hide the form when close button is clicked
+  };
+
   return (
     <div>
       <button className="PlusButton" onClick={() => setShowForm(true)}>Add Event</button>
       {showForm && (
         <form onSubmit={handleSubmit} className="AddEventForm">
+          <button className="CloseButton" onClick={handleClose}>X</button>
           <label>
             Title:
             <input
@@ -82,7 +87,7 @@ function AddEventForm({ onAddEvent }) {
               <option value="athletics">Athletics</option>
             </select>
           </label>
-          <button type="submit">Add Event</button>
+          <button type="submit" className='SubmitButton'>Add Event</button>
         </form>
       )}
     </div>

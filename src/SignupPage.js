@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { doCreateUserWithEmailAndPassword } from './firebase/auth';
 import { db } from './firebase/firebase';
 import { ref, set } from 'firebase/database';
+import './SignupPage.css'; // Assuming you have a CSS file for styling
 
 function SignupPage() {
   const [email, setEmail] = useState('');
@@ -25,14 +26,30 @@ function SignupPage() {
 
   return (
     <section id="signup">
-      <h2 className='h2'>Sign Up</h2>
-      <div>
-        <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        <button onClick={handleSignUp}>Sign Up</button>
-        {error && <p>{error}</p>}
+      <h2 className="h2">Sign Up</h2>
+      <div className="form-group">
+        <div className="input-container">
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="input-field"
+          />
+        </div>
+        <div className="input-container">
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="input-field"
+          />
+        </div>
+        <button onClick={handleSignUp} className="signup-button">Sign Up</button>
+        {error && <p className="error-message">{error}</p>}
       </div>
-      <p>Already have an account? <Link to="/login">Login</Link></p> {/* Link to the login page */}
+      <p className="login-text">Already have an account? <Link to="/login">Login</Link></p>
     </section>
   );
 }

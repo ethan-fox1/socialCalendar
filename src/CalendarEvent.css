@@ -7,6 +7,28 @@
     padding-right: 25px;
     margin-bottom: 10px;
     width: 100%;
+    opacity: .8;
+    transition: opacity 0.3s;
+  }
+
+  .Event:hover {
+    opacity: 1;
+  }
+
+  .EditButton {
+    display: none; /* Hide the button by default */
+    position: absolute;
+    top: -20px; /* Position above the event */
+    right: 0;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 2px 5px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .Event:hover .EditButton {
+    display: block; /* Show the button on hover */
   }
   
   .Class {

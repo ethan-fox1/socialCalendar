@@ -11,6 +11,27 @@
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
+
+  .AddEventFormContainer {
+    position: relative;
+  }
+  
+  .CloseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #bfbfbf;
+    font-size: 12px;
+    cursor: pointer;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .CloseButton:hover {
+    background-color: #fc5a5a;
+  }
   
   .AddEventForm label {
     display: block;
@@ -25,7 +46,7 @@
     border-radius: 3px;
   }
   
-  .AddEventForm button {
+  .SubmitButton {
     margin-top: 10px;
     padding: 8px 16px;
     background-color: #007bff;
@@ -43,7 +64,7 @@
     border-radius: 3px;
   }
   
-  .AddEventForm button:hover {
+  .SubmitButton:hover {
     background-color: #0056b3;
   }
   

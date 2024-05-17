@@ -5,18 +5,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: #f9f9f9;
   border-radius: 10px;
   padding: 5px;
-  width: 350px;
+  width: 380px;
   height: 175px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .weekText {
-    margin-top: 25px;
+    margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 200;
     font-family: Kanit;
     font-size: 28px;
   }
+
+  .ImageContainer {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .ImageContainer img {
+    width: 380px;
+    height: 210px;
+    object-fit: fill;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  

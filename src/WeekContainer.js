@@ -1,6 +1,7 @@
 import React from "react";
 import "./WeekContainer.css";
 import "./fonts.css";
+import myImage from "./weeklyCalendar.png";
 
 function WeekContainer() {
   return (
@@ -11,7 +12,9 @@ function WeekContainer() {
             <i className="material-icons">chevron_right</i>
         </h2>
         <div className="WeekContainer">
-            <h1>Week Container</h1>
+            <div className="ImageContainer">
+              <img src={myImage} alt="Week" />
+            </div>
         </div>
     </div>
   );

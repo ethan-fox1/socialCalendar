@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { doSignInWithEmailAndPassword } from './firebase/auth';
+import './LoginPage.css'; // Assuming you have a CSS file for styling
 
 function LoginPage() {
   const [email, setEmail] = useState('');
@@ -17,14 +18,30 @@ function LoginPage() {
 
   return (
     <section id="login">
-      <h2 className='h2'>Login</h2>
-      <div>
-        <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        <button onClick={handleSignIn}>Login</button>
-        {error && <p>{error}</p>}
+      <h2 className="h2">Login</h2>
+      <div className="form-group">
+        <div className="input-container">
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="input-field"
+          />
+        </div>
+        <div className="input-container">
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="input-field"
+          />
+        </div>
+        <button onClick={handleSignIn} className="login-button">Login</button>
+        {error && <p className="error-message">{error}</p>}
       </div>
-      <p>Don't have an account? <Link to="/signup">Sign up</Link></p> {/* Link to the signup page */}
+      <p className="signup-text">Don't have an account? <Link to="/signup">Sign up</Link></p>
     </section>
   );
 }
